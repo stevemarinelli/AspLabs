@@ -4,7 +4,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore" Version="$(MicrosoftAspNetCorePackageVersion)" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <ProjectReference Include="..\..\src\Microsoft.AspNetCore.WebHooks.Receivers.Salesforce\Microsoft.AspNetCore.WebHooks.Receivers.Salesforce.csproj" />
   </ItemGroup>
 </Project>

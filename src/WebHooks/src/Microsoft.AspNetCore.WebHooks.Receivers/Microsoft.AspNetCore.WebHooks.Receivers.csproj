@@ -8,7 +8,7 @@
     <Compile Include="..\shared\Utilities\ObjectPathUtilities.cs">
       <Link>Utilities\ObjectPathUtilities.cs</Link>
     </Compile>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="$(MicrosoftAspNetCoreMvcCorePackageVersion)" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
   </ItemGroup>
 </Project>

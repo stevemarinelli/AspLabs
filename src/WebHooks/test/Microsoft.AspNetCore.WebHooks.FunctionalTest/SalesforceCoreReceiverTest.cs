@@ -67,7 +67,7 @@ namespace Microsoft.AspNetCore.WebHooks.FunctionalTest
         public async Task WebHookAction_WithBody_Succeeds()
         {
             // Arrange
-            var fixture = _fixture.WithTestLogger(out var testSink);
+            var fixture = _fixture.WithTestLogger();
             var client = fixture.CreateClient();
 
             var path = Path.Combine("Resources", "RequestBodies", "Salesforce.xml");
@@ -101,7 +101,7 @@ namespace Microsoft.AspNetCore.WebHooks.FunctionalTest
                 "'/*[local-name()='Body']/*[local-name()='notifications']/*[local-name()='OrganizationId']' element." +
                 "</faultstring>";
 
-            var fixture = _fixture.WithTestLogger(out var testSink);
+            var fixture = _fixture.WithTestLogger();
             var client = fixture.CreateClient();
 
             var path = Path.Combine("Resources", "RequestBodies", "Salesforce.Empty.xml");
@@ -132,7 +132,7 @@ namespace Microsoft.AspNetCore.WebHooks.FunctionalTest
                 "[local-name()='OrganizationId']' value provided in the HTTP request body did not match the " +
                 "expected value.</faultstring>";
 
-            var fixture = _fixture.WithTestLogger(out var testSink);
+            var fixture = _fixture.WithTestLogger();
             var client = fixture.CreateClient();
 
             var path = Path.Combine("Resources", "RequestBodies", "Salesforce.BadSecret.xml");

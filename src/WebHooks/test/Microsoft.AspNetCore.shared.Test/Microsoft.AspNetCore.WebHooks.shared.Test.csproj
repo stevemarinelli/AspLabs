@@ -4,6 +4,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <Compile Include="..\..\src\shared\Utilities\TrimmingTokenizer.cs">
       <Link>Utilities\TrimmingTokenizer.cs</Link>
     </Compile>

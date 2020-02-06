@@ -9,7 +9,7 @@
     <Compile Include="..\shared\Utilities\ObjectPathUtilities.cs">
       <Link>Utilities\ObjectPathUtilities.cs</Link>
     </Compile>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="$(MicrosoftAspNetCoreMvcFormattersXmlPackageVersion)" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <ProjectReference Include="..\Microsoft.AspNetCore.WebHooks.Receivers\Microsoft.AspNetCore.WebHooks.Receivers.csproj" />
   </ItemGroup>
 </Project>
